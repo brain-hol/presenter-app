@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D37C745B2923DE610006E5DB /* PresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C745A2923DE610006E5DB /* PresenterApp.swift */; };
-		D37C745D2923DE610006E5DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C745C2923DE610006E5DB /* ContentView.swift */; };
 		D37C745F2923DE610006E5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C745E2923DE610006E5DB /* Assets.xcassets */; };
 		D37C74632923DE610006E5DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C74622923DE610006E5DB /* Preview Assets.xcassets */; };
+		D3B9318F2927093D00AB79AB /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9318E2927093D00AB79AB /* PresentationView.swift */; };
+		D3BB44682925D61C00A3324F /* PresentationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BB44672925D61C00A3324F /* PresentationListView.swift */; };
+		D3C067A62937E3B100E15BE8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C067A52937E3B100E15BE8 /* DataModel.swift */; };
+		D3C067AA2937EA0400E15BE8 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C067A92937EA0400E15BE8 /* SlideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D37C74572923DE610006E5DB /* Presenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C745A2923DE610006E5DB /* PresenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterApp.swift; sourceTree = "<group>"; };
-		D37C745C2923DE610006E5DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D37C745E2923DE610006E5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D37C74602923DE610006E5DB /* Presenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Presenter.entitlements; sourceTree = "<group>"; };
 		D37C74622923DE610006E5DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3B9318E2927093D00AB79AB /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		D3BB44672925D61C00A3324F /* PresentationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationListView.swift; sourceTree = "<group>"; };
+		D3C067A52937E3B100E15BE8 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D3C067A92937EA0400E15BE8 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				D37C745A2923DE610006E5DB /* PresenterApp.swift */,
-				D37C745C2923DE610006E5DB /* ContentView.swift */,
 				D37C745E2923DE610006E5DB /* Assets.xcassets */,
 				D37C74602923DE610006E5DB /* Presenter.entitlements */,
 				D37C74612923DE610006E5DB /* Preview Content */,
+				D3BB44672925D61C00A3324F /* PresentationListView.swift */,
+				D3B9318E2927093D00AB79AB /* PresentationView.swift */,
+				D3C067A92937EA0400E15BE8 /* SlideView.swift */,
+				D3C067A52937E3B100E15BE8 /* DataModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37C745D2923DE610006E5DB /* ContentView.swift in Sources */,
+				D3C067A62937E3B100E15BE8 /* DataModel.swift in Sources */,
+				D3BB44682925D61C00A3324F /* PresentationListView.swift in Sources */,
 				D37C745B2923DE610006E5DB /* PresenterApp.swift in Sources */,
+				D3C067AA2937EA0400E15BE8 /* SlideView.swift in Sources */,
+				D3B9318F2927093D00AB79AB /* PresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +287,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -287,10 +300,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.holderness.brian.Presenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,11 +328,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -325,10 +341,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.holderness.brian.Presenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
